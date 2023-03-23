@@ -25,9 +25,12 @@
               "src/assets"
             ],
             "styles": [
+              "FinalSantucciPortfolio/node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
-            ],
-            "scripts": []
+              ],
+            "scripts": [
+              "FinalSantucciPortfolio/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
