@@ -1,0 +1,41 @@
+.row{
+    padding: 20px;
+}
+div{
+    background-color:#56adca;
+    text-align: center;
+    }
+@media (min-width: 721px){
+    #foto{
+        position: relative;
+        width: 90%;
+        border-radius: 100%;
+        box-shadow: 4px 4px 4px antiquewhite;
+        bottom: 80px;
+        left: 5%;
+    }
+    #acerca{
+        position: relative;
+        right: 20%;
+        top: 80px;
+    }
+    }
+@media (max-width: 720px){
+    #foto{
+        position: relative;
+        width: 90%;
+        border-radius: 100%;
+        box-shadow: 4px 4px 4px antiquewhite;
+        bottom: 80px;
+    }
+    }
+#nombre{
+    background-color: aliceblue;
+}
+#desarrollador{
+    background-color: #439cb9;
+}
+#acerca{
+    -webkit-text-fill-color: aliceblue;
+    -webkit-text-stroke: 1px black;
+}
