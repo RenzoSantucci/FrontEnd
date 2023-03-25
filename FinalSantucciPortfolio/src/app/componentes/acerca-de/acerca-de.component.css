@@ -28,7 +28,10 @@ div{
         box-shadow: 4px 4px 4px antiquewhite;
         bottom: 80px;
     }
+    #acerca{
+        width: 70%;
     }
+}
 #nombre{
     background-color: aliceblue;
 }
@@ -36,6 +39,5 @@ div{
     background-color: #439cb9;
 }
 #acerca{
-    -webkit-text-fill-color: aliceblue;
-    -webkit-text-stroke: 1px black;
+    color: #fefefe;
 }
