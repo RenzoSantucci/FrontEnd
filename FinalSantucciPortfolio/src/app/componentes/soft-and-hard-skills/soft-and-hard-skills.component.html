@@ -4,9 +4,10 @@
         <circle-progress
         [percent]="90"
         [radius]="100"
-        [imageSrc]="'/src/assets/Ingles.png'"
+        [imageSrc]="'/assets/Ingles.png'"
         [showImage]="true"
-        [imageWidth]="50"
+        [imageWidth]="100"
+        [imageHeight]="100"
         [showUnits]="false"
         [showSubtitle] = "false"
         [responsive]="true"
@@ -16,13 +17,17 @@
         [innerStrokeColor]="'Azure'"
         [animation]="true"
         [animationDuration]="1000"
+        [lazy]="true"
         ></circle-progress>
     </div>
     <div class="col-sm-4 col-md-4 col-lg-4">
         <circle-progress
         [percent]="65"
         [radius]="100"
-        title="HTML"
+        [imageSrc]="'/assets/HTML5.png'"
+        [showImage]="true"
+        [imageWidth]="100"
+        [imageHeight]="100"
         [showUnits]="false"
         [showSubtitle] = "false"
         [responsive]="true"
@@ -39,7 +44,10 @@
         <circle-progress
         [percent]="60"
         [radius]="100"
-        title="CSS"
+        [imageSrc]="'/assets/CSS.png'"
+        [showImage]="true"
+        [imageWidth]="100"
+        [imageHeight]="100"
         [showUnits]="false"
         [showSubtitle] = "false"
         [responsive]="true"
@@ -56,7 +64,10 @@
         <circle-progress
         [percent]="50"
         [radius]="100"
-        title="JavaScript"
+        [imageSrc]="'/assets/JavaScript.png'"
+        [showImage]="true"
+        [imageWidth]="100"
+        [imageHeight]="100"
         [showUnits]="false"
         [showSubtitle] = "false"
         [responsive]="true"
@@ -72,8 +83,11 @@
     <div class="col-sm-4 col-md-4 col-lg-4">
         <circle-progress
         [percent]="65"
-        [radius]="100"
-        title="Github"
+        [radius]="100"        
+        [imageSrc]="'/assets/GH.png'"
+        [showImage]="true"
+        [imageWidth]="100"
+        [imageHeight]="100"
         [showUnits]="false"
         [showSubtitle] = "false"
         [responsive]="true"
@@ -90,9 +104,11 @@
         <circle-progress
         [percent]="90"
         [radius]="100"
-        title="Trabajo Grupal"
+        [imageSrc]="'/assets/Grupal.png'"
+        [showImage]="true"
+        [imageWidth]="100"
+        [imageHeight]="100"
         [showUnits]="false"
-        [showSubtitle] = "false"
         [responsive]="true"
         [outerStrokeWidth]="16"
         [innerStrokeWidth]="8"
