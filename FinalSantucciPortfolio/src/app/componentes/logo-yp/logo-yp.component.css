@@ -1,3 +1,29 @@
 #LogoYP{
-    width: 351px;
+    width: 350px;
+}
+
+#github{
+    width: 50px;
+    position: relative;
+    right: 15px;
+}
+
+#instagram{
+    width: 50px;
+    position: relative;
+    right: 5px;
+}
+
+.redes{
+    float: right;
+}
+
+.logo{
+    float: left;
+}
+
+div{
+    padding: 20px;
+    display: inline;
+
 }
