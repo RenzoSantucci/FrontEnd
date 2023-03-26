@@ -8,6 +8,7 @@ import com.portfolio.rs.Entity.Persona;
 import com.portfolio.rs.Interface.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author 54261
  */
 @RestController
+@CrossOrigin(origins="http://localhost:4200")
 public class PersonaController {
     @Autowired IPersonaService ipersonaservice;
     
@@ -42,7 +44,7 @@ public class PersonaController {
         return "La persona fue borrada satisfactoriamente";
     }
     
-    // URL:PUERTO/PERSONAS/EDITAR/ID/nombre & apellido & img
+    // URL:PUERTO/PERSONAS/EDITAR/ID&nombre & apellido & img
     @PutMapping("/personas/editar/{id}")
     public Persona editPersona(@PathVariable Long id, 
             @RequestParam("nombre") String nuevoNombre,
@@ -57,4 +59,8 @@ public class PersonaController {
                 return persona;
     }
     
+    @GetMapping("/personas/traer/perfil")
+    public Persona findPersona(){
+        return ipersonaservice.findPersona((long)3);
+    }
 }
