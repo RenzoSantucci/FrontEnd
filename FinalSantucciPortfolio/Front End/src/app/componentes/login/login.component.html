@@ -1,3 +1,4 @@
+
 <section class="vh-100" style="background-color: #508bfc;">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -6,28 +7,30 @@
             <div class="card-body p-5 text-center">
   
               <h3 class="mb-5">Login Administrador</h3>
+              
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
   
-              <div class="form-outline mb-4">
-                <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
-                <label class="form-label" for="typeEmailX-2">Nombre</label>
-              </div>
-  
-              <div class="form-outline mb-4">
-                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
-                <label class="form-label" for="typePasswordX-2">Contraseña</label>
-              </div>
-  
-              <!-- Checkbox -->
-              <div class="form-check d-flex justify-content-start mb-4">
-                <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-                <label class="form-check-label" for="form1Example3"> Recordar contraseña </label>
-              </div>
-  
-              <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
-  
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg"
+                    [(ngModel)]="nombreUsuario" required />
+                  <label class="form-label" for="nombreUsuario">Usuario</label>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password"
+                    required />
+                  <label class="form-label" for="password">Password</label>
+                </div>
+
+                <!-- <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p> -->
+
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+              </form>
+             
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    </section>

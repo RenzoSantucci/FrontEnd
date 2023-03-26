@@ -6,8 +6,8 @@ package com.portfolio.rs.Security.Service;
 
 import com.portfolio.rs.Security.Entity.Repository.UsuarioRepository;
 import com.portfolio.rs.Security.Entity.Usuario;
-import jakarta.transaction.Transactional;
 import java.util.Optional;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +22,7 @@ public class UsuarioService {
     UsuarioRepository usuarioRepository;
     
     public Optional<Usuario> getByNombreUsuario(String nombreUsuario){
-        return usuarioRepository.findByeNombreUsuario(nombreUsuario);
+        return usuarioRepository.findByNombreUsuario(nombreUsuario);
     }
     
     public boolean existsByNombreUsuario(String nombreUsuario){
