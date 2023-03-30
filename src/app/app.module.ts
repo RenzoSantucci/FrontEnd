@@ -14,12 +14,16 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
-import {FormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { interceptorProvider } from './servicios/interceptor-service';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
 import { NewSkillComponent } from './componentes/soft-and-hard-skills/new-skill.component';
 import { SoftAndHardSkillsComponent } from './componentes/soft-and-hard-skills/soft-and-hard-skills.component';
+import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
+import { EditEducacionComponent } from './componentes/educacion/editeducacion.component';
+import { EditSkillComponent } from './componentes/soft-and-hard-skills/edit-skill.component';
+
 
 @NgModule({
   declarations: [
@@ -37,12 +41,16 @@ import { SoftAndHardSkillsComponent } from './componentes/soft-and-hard-skills/s
     LoginComponent,
     NewExperienciaComponent,
     NeweducacionComponent,
-    NewSkillComponent
+    NewSkillComponent,
+    EditExperienciaComponent,
+    EditEducacionComponent,
+    EditSkillComponent
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     NgCircleProgressModule.forRoot(),
     HttpClientModule
   ],

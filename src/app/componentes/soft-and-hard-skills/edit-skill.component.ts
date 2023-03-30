@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Skill } from 'src/app/model/skill';
 import { SkillService } from 'src/app/servicios/skill.service';
 
+
 @Component({
   selector: 'app-edit-skill',
   templateUrl: './edit-skill.component.html',
@@ -25,10 +26,10 @@ export class EditSkillComponent implements OnInit {
         alert("Error al modificar");
         this.router.navigate(['']);
       }
-    )
+    );
   }
 
-  onUpdate(){
+  onUpdate() {
     const id = this.activatedRouter.snapshot.params['id'];
     this.skillS.update(id, this.skill).subscribe(
       data => {
@@ -37,6 +38,7 @@ export class EditSkillComponent implements OnInit {
         alert("Error al modificar la skill");
         this.router.navigate(['']);
       }
-    )
+    );
   }
 }
+

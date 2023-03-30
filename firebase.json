@@ -1,10 +1,16 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/final-santucci-portfolio",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
